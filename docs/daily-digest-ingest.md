@@ -11,8 +11,13 @@ After it posts, each task also files new Gallery feature requests into the
 tracker's shared database. The tracker shows them within seconds.
 
 - Tracker: https://claude.ai/artifact/6uESD6i7q5otNC95atZnG6
-- Collection the digests write: `requests`
+- Collections the digests write: `requests` (the rows) and `runs` (one doc per run,
+  drives the **Fetched … ago** chip in the header)
 - Collection the digests **never** touch: `triage` (people's bucket and priority choices)
+
+Between digests, anyone who can edit the tracker can click **Fetch now** in its header. It
+runs the same ingest from the page (see `src/lib/fetch-now.ts`) and logs a `runs` doc with
+`by: "Fetch now"`. Rows it files carry `addedBy: "Fetch now"`.
 
 ## How the tracker reads `requests`
 
@@ -37,7 +42,8 @@ AFTER POSTING THE DIGEST — file Gallery feature requests into the tracker.
 
 Tracker URL: https://claude.ai/artifact/6uESD6i7q5otNC95atZnG6
 Only file Gallery *feature requests* from today's digest (skip bugs, how-to
-questions and non-Gallery items). If there are none, stop here.
+questions and non-Gallery items). If there are none, skip to step 4 (still
+log the run so the tracker shows it checked today).
 
 1. Read what's already there:
    ArtifactData action "list", url <Tracker URL>, collection "requests",
@@ -92,9 +98,15 @@ questions and non-Gallery items). If there are none, stop here.
    (max 50 entries; each entry {op, collection: "requests", doc_id, data,
    if_version when updating}).
 
-4. NEVER write to the "triage" collection. It holds the team's decisions.
+4. Log this run, even when nothing was filed: "set" collection "runs",
+   doc_id "<YYYY-MM-DD>-<task slug, e.g. daily-jira-slack>", data:
+     { at: "<now, ISO 8601>", by: "<this task's name>",
+       added: <number of new docs from c>, repeats: <number from a + b> }
+   (Include it in the batch from step 3 when there is one.)
 
-5. End the digest thread with one line: "Tracker: +N new, M repeats".
+5. NEVER write to the "triage" collection. It holds the team's decisions.
+
+6. End the digest thread with one line: "Tracker: +N new, M repeats".
 
 FALLBACK — if ArtifactData isn't available in this run (tool missing, or the
 call errors with not found / not granted):
@@ -106,6 +118,11 @@ call errors with not found / not granted):
 ```
 
 ## Checking it worked
+
+- The header chip reads **Fetched 2h ago** (hover for the exact time, task and
+  counts). It is the latest of any `runs` doc's `at` and any `requests` doc's
+  `addedAt`. It turns amber after 26 hours with no run. Before any digest has run
+  it reads **Log to Nov 3**, the last date in the seed log.
 
 - Open the tracker and sort by **Newest**. New rows carry a **New** badge and
   numbers after #150.

@@ -37,7 +37,19 @@ into one file. Then `scripts/build-artifact.mjs` keeps only what the Artifact pa
 `<title>`, the `claude:viewport-fit-sides` meta, the inlined `<style>`/`<script>`, and
 `<div id="root">`.
 
-Publish it with capabilities `{ db: {}, user: {} }`. To update the live tracker, republish
+Publish it with these capabilities:
+
+```json
+{
+  "db": {}, "user": {}, "sample": {},
+  "mcp": { "servers": [
+    { "server": "Slack", "tools": ["slack_read_channel"] },
+    { "server": "Intercom", "tools": ["search_conversations"] }
+  ] }
+}
+```
+
+`mcp` and `sample` power **Fetch now**. Without them the button stays hidden. To update the live tracker, republish
 to the URL above.
 
 ## Data
@@ -53,15 +65,26 @@ to the URL above.
   The script maps each sheet category to a starting bucket. A hand-reviewed override list
   (`OVERRIDES` in `scripts/import-xlsx.py`) then moves specific rows: watermarks and email
   styling go to Brandkit, download caps go to Store, and so on.
-- **Inside claude.ai** (`src/lib/store.ts`): the app subscribes once to two collections.
+- **Inside claude.ai** (`src/lib/store.ts`): the app subscribes once to three collections.
   - `triage/<request id>`: `{ bucket?, priority?, at }`, written by the page. A failed
     write rolls back and shows a toast.
   - `requests/<id>`: rows added by the morning digests. A seed id (`r12`) overrides that
     row; a new id becomes a new request numbered after the seed. Every field is validated:
     text is required, links must be `https://` (max 5), and mentions are clamped to 1–99.
+  - `runs/<date>-<task>`: `{ at, by, added, repeats }`, one per digest run. The header's
+    **Fetched … ago** chip shows the latest of these and of `requests` `addedAt`.
   - `user.can("data.write") === false` switches the app to **View only**.
 - **New requests without a bucket** get one from `suggestBucket(text, category)` in
   `src/lib/taxonomy.ts`. It agrees with the hand-sorted seed on 148 of 150 rows.
+- **Fetch now** (`src/lib/fetch-now.ts`): a header button that runs the digest ingest on
+  demand. It reads the Gallery Slack channels and Intercom conversations since the last
+  fetch (capped at 7 days) with the viewer's own connectors. Then it asks Claude, on the
+  viewer's usage, which messages are new feature requests and which repeat tracked ones.
+  It writes to `requests` and logs a `runs` doc. Links are kept only for Slack and
+  Intercom, and any link already on the tracker is skipped, so a re-run never double
+  counts. Each run saves its per-step timings in its `runs` doc. The button's `~47s` and the
+  progress panel's per-source estimates are the median of the last 10 timed runs. The button shows only to people who can write, and only where the connectors
+  and Claude are available. It never writes to `triage`.
 - **Morning digests**: see [docs/daily-digest-ingest.md](docs/daily-digest-ingest.md).
 
 ## Folder map
@@ -73,7 +96,8 @@ src/
   index.css                Tailwind + shadcn tokens + bucket/priority colors (light & dark)
   claude-env.d.ts          types for the claude.ai runtime (window.claude.use)
   components/
-    tracker-header.tsx     title, sync status, Copy CSV, theme menu
+    fetch-progress.tsx     per-source progress panel shown while fetching
+    tracker-header.tsx     title, last-fetched chip, Fetch now, sync status, Copy CSV, theme menu
     stat-cards.tsx         Requests / Triaged / Quick wins / P1
     bucket-grid.tsx        bucket × priority grid (click to filter)
     demand-bars.tsx        mentions by bucket
@@ -82,6 +106,8 @@ src/
     ui/                    shadcn/ui components
   data/seed-requests.json  seed requests
   lib/
+    fetch-now.ts           Fetch now: Slack/Intercom → Claude → requests, timings, estimates
+    time.ts                duration formatting, 1s ticker
     store.ts               useTracker(): db sync, localStorage fallback, validation
     taxonomy.ts            bucket/priority metadata, suggestBucket()
     rows.ts                join, filter, sort, CSV

@@ -34,6 +34,17 @@ export type TriageMap = Record<string, TriageEntry>
 
 export type SyncStatus = "connecting" | "synced" | "local" | "readonly"
 
+/** When requests were last pulled in, for the header indicator. */
+export interface LastFetch {
+  /** Epoch ms. */
+  at: number
+  /** "digest": a morning digest run or a row it filed. "seed": only the bundled log. */
+  kind: "digest" | "seed"
+  by?: string
+  added?: number
+  repeats?: number
+}
+
 export type PriorityFilter = "all" | "untriaged" | Priority
 export type SortKey = "mentions" | "newest" | "oldest" | "priority"
 

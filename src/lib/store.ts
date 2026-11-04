@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react"
 
 import seedJson from "@/data/seed-requests.json"
+import { computeEstimates, fetchNow, type Estimates, type FetchStep, type FetchSummary } from "./fetch-now"
 import { isBucket, isPriority, suggestBucket } from "./taxonomy"
-import type { Bucket, Priority, Request, SyncStatus, TriageEntry, TriageMap } from "./types"
+import type { Bucket, LastFetch, Priority, Request, SyncStatus, TriageEntry, TriageMap } from "./types"
 
 /* ------------------------------------------------------------------ */
 /* Seed data                                                           */
@@ -11,9 +12,11 @@ import type { Bucket, Priority, Request, SyncStatus, TriageEntry, TriageMap } fr
 export const SEED: Request[] = (seedJson as Request[]).map((r) => ({ ...r, links: [...r.links] }))
 const SEED_BY_ID = new Map(SEED.map((r) => [r.id, r]))
 const SEED_MAX_N = SEED.reduce((m, r) => Math.max(m, r.n), 0)
+const SEED_LAST_DATE = SEED.reduce((m, r) => (r.date > m ? r.date : m), "")
 
 const TRIAGE_COLLECTION = "triage"
 const REQUESTS_COLLECTION = "requests"
+const RUNS_COLLECTION = "runs"
 const LOCAL_TRIAGE_KEY = "urt:triage:v1"
 const CONNECT_TIMEOUT_MS = 10_000
 
@@ -119,6 +122,42 @@ export function mergeRequests(remote: Map<string, Record<string, unknown>>): Req
   ]
 }
 
+const toMs = (v: unknown): number => {
+  const t = typeof v === "number" ? v : typeof v === "string" ? Date.parse(v) : NaN
+  // Ignore junk and clock-skewed future stamps (more than 5 min ahead).
+  return Number.isFinite(t) && t > 0 && t <= Date.now() + 5 * 60_000 ? t : 0
+}
+
+const count = (v: unknown) =>
+  typeof v === "number" && Number.isFinite(v) && v >= 0 ? Math.min(999, Math.round(v)) : undefined
+
+/**
+ * Latest of: a digest run logged in "runs", or the newest addedAt in
+ * "requests". Falls back to the last date in the bundled seed log.
+ */
+export function computeLastFetch(
+  runs: Map<string, Record<string, unknown>>,
+  remote: Map<string, Record<string, unknown>>,
+): LastFetch {
+  let best: LastFetch | null = null
+  for (const raw of runs.values()) {
+    const at = toMs(raw.at)
+    if (at && (!best || at > best.at))
+      best = {
+        at,
+        kind: "digest",
+        by: str(raw.by, 80) || undefined,
+        added: count(raw.added),
+        repeats: count(raw.repeats),
+      }
+  }
+  for (const raw of remote.values()) {
+    const at = toMs(raw.addedAt)
+    if (at && (!best || at > best.at)) best = { at, kind: "digest", by: str(raw.addedBy, 80) || undefined }
+  }
+  return best ?? { at: Date.parse(SEED_LAST_DATE + "T00:00:00Z"), kind: "seed" }
+}
+
 /* ------------------------------------------------------------------ */
 /* localStorage helpers (may throw or be empty in some viewers)        */
 /* ------------------------------------------------------------------ */
@@ -165,7 +204,14 @@ export interface Tracker {
   status: SyncStatus
   requests: Request[]
   triage: TriageMap
+  lastFetch: LastFetch
   canWrite: boolean
+  /** Shared data, write access, and Slack/Intercom/Claude available in this view. */
+  canFetch: boolean
+  /** Pull new requests from Slack and Intercom now. Rejects with FetchError. */
+  fetchNow(signal: AbortSignal, onProgress: (steps: FetchStep[]) => void): Promise<FetchSummary>
+  /** Expected time per step, from past runs. */
+  estimates: Estimates
   /** Resolves true when saved, false when refused (state rolled back). */
   update(id: string, change: TriageChange): Promise<boolean>
 }
@@ -185,6 +231,8 @@ export function useTracker(): Tracker {
   const [status, setStatus] = useState<SyncStatus>("connecting")
   const [triage, setTriage] = useState<TriageMap>({})
   const [remote, setRemote] = useState<Map<string, Record<string, unknown>>>(new Map())
+  const [runs, setRuns] = useState<Map<string, Record<string, unknown>>>(new Map())
+  const [fetchable, setFetchable] = useState(false)
 
   const dbRef = useRef<ClaudeDb | null>(null)
   const modeRef = useRef<"pending" | "db" | "local">("pending")
@@ -207,6 +255,7 @@ export function useTracker(): Tracker {
       modeRef.current = "local"
       dbRef.current = null
       setRemote(new Map())
+      setRuns(new Map())
       replaceTriage(readLocalTriage())
       setStatus("local")
     }
@@ -224,6 +273,13 @@ export function useTracker(): Tracker {
 
       dbRef.current = db
       modeRef.current = "db"
+      // "Fetch now" needs connectors and Claude too. use() never prompts.
+      void Promise.all([
+        claude.use("mcp").catch(() => null),
+        claude.use("sample").catch(() => null),
+      ]).then(([mcp, sample]) => {
+        if (!cancelled) setFetchable(Boolean(mcp && sample))
+      })
       if (canWrite === false) setStatus("readonly")
 
       let terminal = false
@@ -259,6 +315,23 @@ export function useTracker(): Tracker {
           setRemote(next)
         }, onError),
       )
+
+      // Digest run log. Only feeds the "last fetched" chip, so an error here
+      // is logged rather than dropping the whole app to local mode.
+      unsubs.push(
+        db.collection(RUNS_COLLECTION).onSnapshot(
+          (snap) => {
+            if (cancelled) return
+            const next = new Map<string, Record<string, unknown>>()
+            for (const d of snap.docs) {
+              const data = d.data()
+              if (data && typeof data === "object") next.set(d.id, data)
+            }
+            setRuns(next)
+          },
+          (e) => console.warn("[tracker] run log unavailable:", e.code, e.message),
+        ),
+      )
     })()
 
     return () => {
@@ -268,6 +341,25 @@ export function useTracker(): Tracker {
   }, [replaceTriage])
 
   const requests = useMemo(() => mergeRequests(remote), [remote])
+  const lastFetch = useMemo(() => computeLastFetch(runs, remote), [runs, remote])
+
+  const estimates = useMemo(() => computeEstimates(runs), [runs])
+
+  const runFetch = useCallback(
+    (signal: AbortSignal, onProgress: (steps: FetchStep[]) => void) => {
+      const db = dbRef.current
+      if (!db || modeRef.current !== "db") return Promise.reject(new Error("not connected"))
+      return fetchNow({
+        db,
+        since: lastFetch.at,
+        requests,
+        remoteIds: new Set(remote.keys()),
+        signal,
+        onProgress,
+      })
+    },
+    [lastFetch.at, requests, remote],
+  )
 
   const update = useCallback(async (id: string, change: TriageChange) => {
     if (modeRef.current === "pending") return false
@@ -324,7 +416,11 @@ export function useTracker(): Tracker {
     status,
     requests,
     triage,
+    lastFetch,
     canWrite: status !== "readonly" && status !== "connecting",
+    canFetch: fetchable && status === "synced",
+    fetchNow: runFetch,
+    estimates,
     update,
   }
 }

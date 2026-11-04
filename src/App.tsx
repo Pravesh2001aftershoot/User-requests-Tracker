@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from "react"
+import { useCallback, useMemo, useRef, useState } from "react"
 import { toast } from "sonner"
 
 import { BucketGrid } from "@/components/bucket-grid"
@@ -7,6 +7,8 @@ import { RequestList } from "@/components/request-list"
 import { StatCards } from "@/components/stat-cards"
 import { TrackerHeader } from "@/components/tracker-header"
 import { Toaster } from "@/components/ui/sonner"
+import { FetchProgress } from "@/components/fetch-progress"
+import { FetchError, type FetchStep } from "@/lib/fetch-now"
 import { buildRows, copyText, toCsv } from "@/lib/rows"
 import { readLocal, useTracker, writeLocal } from "@/lib/store"
 import { BUCKET_META, PRIORITY_META, isBucket, isPriority } from "@/lib/taxonomy"
@@ -56,6 +58,47 @@ export default function App() {
     setFiltersState(DEFAULT_FILTERS)
     writeLocal(FILTERS_KEY, DEFAULT_FILTERS)
   }, [])
+
+  const [run, setRun] = useState<{ steps: FetchStep[]; startedAt: number; endedAt: number | null } | null>(
+    null,
+  )
+  const fetchCtl = useRef<AbortController | null>(null)
+  const { fetchNow } = tracker
+
+  const onFetch = useCallback(async () => {
+    if (fetchCtl.current) return
+    const ctl = new AbortController()
+    fetchCtl.current = ctl
+    const startedAt = Date.now()
+    setRun({ steps: [], startedAt, endedAt: null })
+    const onProgress = (steps: FetchStep[]) => setRun((r) => (r ? { ...r, steps } : r))
+    try {
+      const r = await fetchNow(ctl.signal, onProgress)
+      const found =
+        r.added || r.repeats
+          ? `Added ${r.added} new request${r.added === 1 ? "" : "s"}, ${r.repeats} repeat${r.repeats === 1 ? "" : "s"}`
+          : r.empty
+            ? "No new messages since the last fetch"
+            : "No new feature requests found"
+      if (r.skipped.length) toast.warning(found, { description: `Skipped ${r.skipped.join("; ")}` })
+      else toast.success(found)
+    } catch (e) {
+      const err = e instanceof FetchError ? e : null
+      if (err?.code !== "cancelled") toast.error(err?.message ?? "Fetching failed. Try again.")
+    } finally {
+      fetchCtl.current = null
+      // Steps still running when it stopped or failed show as not finished.
+      setRun((r) =>
+        r && {
+          ...r,
+          endedAt: Date.now(),
+          steps: r.steps.map((s) =>
+            s.state === "running" || s.state === "waiting" ? { ...s, state: "skipped", note: "not finished" } : s,
+          ),
+        },
+      )
+    }
+  }, [fetchNow])
 
   const rows = useMemo(() => buildRows(tracker.requests, tracker.triage), [tracker.requests, tracker.triage])
   const isDefault = JSON.stringify(filters) === JSON.stringify(DEFAULT_FILTERS)
@@ -122,6 +165,17 @@ export default function App() {
       <main className="mx-auto flex w-full max-w-6xl flex-col gap-5 pr-[max(16px,env(safe-area-inset-right,0px))] pl-[max(16px,env(safe-area-inset-left,0px))] py-6 sm:gap-6 sm:py-8">
         <TrackerHeader
           status={tracker.status}
+          lastFetch={tracker.lastFetch}
+          fetch={
+            tracker.canFetch
+              ? {
+                  startedAt: run && run.endedAt === null ? run.startedAt : null,
+                  estimateMs: tracker.estimates.total,
+                  onFetch: () => void onFetch(),
+                  onStop: () => fetchCtl.current?.abort(),
+                }
+              : undefined
+          }
           theme={theme.pref}
           resolvedTheme={theme.resolved}
           onTheme={(t) => {
@@ -130,6 +184,16 @@ export default function App() {
           }}
           onCopyCsv={onCopyCsv}
         />
+        {run && run.steps.length > 0 && (
+          <FetchProgress
+            steps={run.steps}
+            estimates={tracker.estimates}
+            startedAt={run.startedAt}
+            endedAt={run.endedAt}
+            onStop={() => fetchCtl.current?.abort()}
+            onClose={() => setRun(null)}
+          />
+        )}
         <StatCards rows={rows} />
         <div className="grid min-w-0 gap-5 sm:gap-6 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
           <BucketGrid rows={rows} active={filters} onPick={onPick} />

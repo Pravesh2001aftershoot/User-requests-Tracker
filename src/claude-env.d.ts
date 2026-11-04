@@ -47,9 +47,36 @@ interface ClaudeUser {
   isOwner(): Promise<boolean>
 }
 
+interface ClaudeMcpResult {
+  content: unknown[]
+  payload?: unknown
+}
+
+interface ClaudeMcp {
+  callTool(
+    server: string,
+    tool: string,
+    input?: unknown,
+    options?: { cache?: false | Record<string, unknown>; signal?: AbortSignal },
+  ): Promise<ClaudeMcpResult>
+}
+
+interface ClaudeSampleOptions {
+  signal?: AbortSignal
+  cache?: boolean
+  modelTier?: "default" | "complex" | "quick"
+}
+
+interface ClaudeSample {
+  (input: string, options?: ClaudeSampleOptions): Promise<{ text: string; truncated: boolean }>
+  json<T = unknown>(input: string, options?: ClaudeSampleOptions): Promise<T>
+}
+
 interface ClaudeRuntime {
   use(name: "db"): Promise<ClaudeDb | null>
   use(name: "user"): Promise<ClaudeUser | null>
+  use(name: "mcp"): Promise<ClaudeMcp | null>
+  use(name: "sample"): Promise<ClaudeSample | null>
 }
 
 interface Window {
