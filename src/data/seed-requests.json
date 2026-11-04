@@ -1,0 +1,2119 @@
+[
+  {
+    "id": "r1",
+    "n": 1,
+    "date": "2026-10-02",
+    "text": "Expanded/richer gallery comments feature (recurring internal ask, raised again with screenshot)",
+    "category": "Proofing, Favorites & Comments",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#pod-gallery",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1790883556117329"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r2",
+    "n": 2,
+    "date": "2026-10-02",
+    "text": "Unwatermarked web-quality (low-res, ~1600–2048px) digital download option (Pic-Time offers this); internally suggested to tie into configurable pricing per quality tier",
+    "category": "Downloads & Watermarks",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1790920770496339"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r3",
+    "n": 3,
+    "date": "2026-10-03",
+    "text": "Surface buyer's name/email in the download data sent to the photographer (today only captured for internal analytics when \"require email\" is on)",
+    "category": "Notifications, Emails & Analytics",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support (ONCL-13115), Intercom",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1791037454728409?thread_ts=1791037454.728409&cid=C043CTTL05R",
+      "https://app.intercom.com/a/inbox/_/inbox/conversation/215476224633687"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r4",
+    "n": 4,
+    "date": "2026-10-03",
+    "text": "Tiered/package pricing for digital downloads — e.g. 1 photo for €5, 5 for €15, all for €40 — instead of only \"buy 1\" or \"buy all\"",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support (ONCL-13115), Intercom",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1791037454728409",
+      "https://app.intercom.com/a/inbox/_/inbox/conversation/215476224633687"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r5",
+    "n": 5,
+    "date": "2026-10-04",
+    "text": "Automated gallery population during tethered shooting: live culling/editing straight into an existing branded gallery, shareable via QR code during the shoot",
+    "category": "Integrations, CRM & Website",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1791114047459439"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r6",
+    "n": 6,
+    "date": "2026-10-04",
+    "text": "French-language support for automatic order confirmation emails (currently English-only)",
+    "category": "Localization",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1791052808004419"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r7",
+    "n": 7,
+    "date": "2026-10-04",
+    "text": "More gallery-creation/management settings inside the app itself, so photographers don't have to build galleries on the web and upload separately",
+    "category": "Settings & Presets",
+    "mentions": 1,
+    "origin": "Intercom",
+    "source": "Intercom",
+    "links": [
+      "https://app.intercom.com/a/inbox/_/inbox/conversation/215476233643427"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r8",
+    "n": 8,
+    "date": "2026-10-04",
+    "text": "Self-serve client photo selection + one-time-use coupon codes so clients can pick & check out their package's included image count on their own time (plus more coupon/promo code options)",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1791076133673219"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r9",
+    "n": 9,
+    "date": "2026-10-05",
+    "text": "Let photographers show the collection name persistently in the grid/frame instead of only on hover",
+    "category": "Organization (Sets/Folders/Collections)",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#gallery-internal-feedback",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08TET73ZUM/p1791209603884199"
+    ],
+    "bucket": "collection"
+  },
+  {
+    "id": "r10",
+    "n": 10,
+    "date": "2026-10-05",
+    "text": "Validate email addresses on gallery entry — or make it a toggleable \"require valid email\" option rather than a hard requirement (internal pushback on enforcing it outright)",
+    "category": "Privacy, Access & Security",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#pod-gallery",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1791195200253189"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r11",
+    "n": 11,
+    "date": "2026-10-06",
+    "text": "Ability for photographers to request deletion of already-generated facial recognition data, plus clearer documentation of retention period / when it's created",
+    "category": "Privacy, Access & Security",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support (BIPA compliance escalation)",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1791300981657489?thread_ts=1791300251.132459&cid=C043CTTL05R"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r12",
+    "n": 12,
+    "date": "2026-10-06",
+    "text": "Global toggle to turn off face recognition / AI Selfie Search across all galleries at once (currently must be disabled gallery-by-gallery)",
+    "category": "Privacy, Access & Security",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#gallery-internal-feedback",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08TET73ZUM/p1791294535949109?thread_ts=1791294318.007679&cid=C08TET73ZUM"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r13",
+    "n": 13,
+    "date": "2026-10-06",
+    "text": "Support connecting/importing photos from Google Drive and Dropbox into Galleries",
+    "category": "Integrations, CRM & Website",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1791225328836949"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r14",
+    "n": 14,
+    "date": "2026-10-07",
+    "text": "Add an Australian print lab option",
+    "category": "Print Labs & Products",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support (Gallery pod)",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1791345810265999"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r15",
+    "n": 15,
+    "date": "2026-10-07",
+    "text": "Automated gallery expiration & renewal flow: expiry-warning emails that let the client pay to auto-extend hosting, plus a \"pay to reactivate\" option on an expired gallery link (photographer also notified, with an option to reactivate for free)",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#pod-gallery",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1791394183345769"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r16",
+    "n": 16,
+    "date": "2026-10-07",
+    "text": "More flexible, animated gallery layouts, similar to Pic-Time's sample galleries",
+    "category": "Gallery Design & Branding",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1791395941859759"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r17",
+    "n": 17,
+    "date": "2026-10-07",
+    "text": "Webhooks for gallery events (e.g. firing when a gallery is published) to automate CRM/delivery workflows",
+    "category": "Integrations, CRM & Website",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1791397450839849"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r18",
+    "n": 18,
+    "date": "2026-10-08",
+    "text": "Ability to duplicate/copy an existing gallery",
+    "category": "Organization (Sets/Folders/Collections)",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#gallery-internal-feedback",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08TET73ZUM/p1791459236462259"
+    ],
+    "bucket": "collection"
+  },
+  {
+    "id": "r19",
+    "n": 19,
+    "date": "2026-10-08",
+    "text": "Apply separate watermark PNGs by image orientation (portrait vs landscape)",
+    "category": "Downloads & Watermarks",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1791480203058009"
+    ],
+    "bucket": "brandkit"
+  },
+  {
+    "id": "r20",
+    "n": 20,
+    "date": "2026-10-08",
+    "text": "CRM & invoicing integration (client invoicing, contracts/waivers) within Aftershoot",
+    "category": "Integrations, CRM & Website",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1791403062033769"
+    ],
+    "bucket": "marketing"
+  },
+  {
+    "id": "r21",
+    "n": 21,
+    "date": "2026-10-08",
+    "text": "Direct signup form on aftershoot.com/galleries with auto-login into galleries.aftershoot.com",
+    "category": "Integrations, CRM & Website",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#pod-gallery",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1791465114241089"
+    ],
+    "bucket": "marketing"
+  },
+  {
+    "id": "r22",
+    "n": 22,
+    "date": "2026-10-08",
+    "text": "Global privacy control: hide/disable the public gallery portal, make new galleries \"Unlisted\" by default, toggle visibility per gallery",
+    "category": "Privacy, Access & Security",
+    "mentions": 2,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website, #customer-support",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1791452649701019",
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1791452337927439"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r23",
+    "n": 23,
+    "date": "2026-10-08",
+    "text": "Let users set an actual sale price for markups, not just a % markup (per Zenfolio example)",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#gallery-internal-feedback",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08TET73ZUM/p1791461556201279"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r24",
+    "n": 24,
+    "date": "2026-10-08",
+    "text": "Save reusable gallery settings presets (download/email/visibility defaults per shoot type)",
+    "category": "Settings & Presets",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1791406059221529"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r25",
+    "n": 25,
+    "date": "2026-10-08",
+    "text": "Shop/storefront UX overhaul: visible SHOP icon + multi-select images for cart/purchase",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1791424345833669"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r26",
+    "n": 26,
+    "date": "2026-10-08",
+    "text": "Support camera-to-phone uploads without needing a PC (FTP/mobile upload)",
+    "category": "Mobile",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1791480226671309"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r27",
+    "n": 27,
+    "date": "2026-10-09",
+    "text": "Let clients customize the background color of the photo-viewing area (competitor reference: CloudSpot)",
+    "category": "Gallery Design & Branding",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1791541370253229"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r28",
+    "n": 28,
+    "date": "2026-10-09",
+    "text": "Lock the gallery banner's aspect ratio so it doesn't crop on mobile, allow \"text customization\" to be left blank, and add a drop-shadow option for banner text",
+    "category": "Gallery Design & Branding",
+    "mentions": 2,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website, #customer-support",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1791542102985269",
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1791541703971889"
+    ],
+    "bucket": "brandkit"
+  },
+  {
+    "id": "r29",
+    "n": 29,
+    "date": "2026-10-09",
+    "text": "Vendor/client photo \"sets\": hidden or visible photo sets shareable via a direct link only (e.g. giving a wedding vendor like a florist or DJ access to just their relevant photos), with a single image able to live in multiple sets",
+    "category": "Privacy, Access & Security",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#pod-gallery",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1791497788108539"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r30",
+    "n": 30,
+    "date": "2026-10-10",
+    "text": "Rich link preview when sharing a Gallery link with clients — show the gallery title + cover thumbnail (e.g. \"Mrunal & Swetha Photo Collection by Mithunam Stories\") instead of a bare URL; currently not possible, logged as ONCL-13374 (Selected for dev)",
+    "category": "Notifications, Emails & Analytics",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support (Gallery), Intercom",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1791601395583689",
+      "https://app.intercom.com/a/inbox/_/inbox/conversation/215476158945525"
+    ],
+    "bucket": "marketing"
+  },
+  {
+    "id": "r31",
+    "n": 31,
+    "date": "2026-10-10",
+    "text": "Support alternative payment methods for international customers (e.g. LINK for Philippine Pesos — PayPal is the only option today) (via website feedback)",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1791599765952689"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r32",
+    "n": 32,
+    "date": "2026-10-11",
+    "text": "Ability to set a limit on digital downloads, with clients able to purchase extra images individually or in bundles",
+    "category": "Downloads & Watermarks",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support (ONCL-13400, already moved to \"Selected for dev\")",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1791686817343399"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r33",
+    "n": 33,
+    "date": "2026-10-11",
+    "text": "Export client comments on gallery images as a list (to share with retouchers, instead of manual copy-paste)",
+    "category": "Proofing, Favorites & Comments",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support (ONCL-13411)",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1791731799405169"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r34",
+    "n": 34,
+    "date": "2026-10-11",
+    "text": "Role-based/team access to galleries, so team members don't need full account credentials",
+    "category": "Privacy, Access & Security",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support (ONCL-13411)",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1791731799405169"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r35",
+    "n": 35,
+    "date": "2026-10-11",
+    "text": "Show brand logo (instead of plain text) at the top of gallery-share emails",
+    "category": "Notifications, Emails & Analytics",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1791671397177879"
+    ],
+    "bucket": "brandkit"
+  },
+  {
+    "id": "r36",
+    "n": 36,
+    "date": "2026-10-12",
+    "text": "Ability to remove/delete the face in the \"AI selfie\" feature (end-user feedback, submitted in French)",
+    "category": "Privacy, Access & Security",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1791818093171259"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r37",
+    "n": 37,
+    "date": "2026-10-12",
+    "text": "Album creation UX: let users name an album right after creating it (on the import screen, before photos are uploaded) and keep the album-name edit (pencil) icon visible at all times",
+    "category": "Organization (Sets/Folders/Collections)",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#aftershoot-community",
+    "links": [
+      "https://aftershootco.slack.com/archives/C07AWEDL4S0/p1791814133171239?thread_ts=1791808072.953769&cid=C07AWEDL4S0"
+    ],
+    "bucket": "collection"
+  },
+  {
+    "id": "r38",
+    "n": 38,
+    "date": "2026-10-12",
+    "text": "Auto-create a public portfolio/landing page for every photographer (e.g. aftershoot.com/<name>) — even those who only use RAW Editing/Export — to help with SEO and seed usage",
+    "category": "Integrations, CRM & Website",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#pod-gallery",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1791820743025819"
+    ],
+    "bucket": "marketing"
+  },
+  {
+    "id": "r39",
+    "n": 39,
+    "date": "2026-10-12",
+    "text": "Build basic CRM capabilities (client relations, project tracking) integrated with Gallery/portfolio sharing, raised while comparing to competitors like HoneyBook",
+    "category": "Integrations, CRM & Website",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#pod-gallery",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1791807456536629"
+    ],
+    "bucket": "marketing"
+  },
+  {
+    "id": "r40",
+    "n": 40,
+    "date": "2026-10-13",
+    "text": "A test/sample purchase mode (no real payment) to verify a watermarked gallery delivers the un-watermarked image after checkout — currently not possible",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support + Intercom",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1791856292519329",
+      "https://app.intercom.com/a/inbox/_/inbox/conversation/215476362759377"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r41",
+    "n": 41,
+    "date": "2026-10-13",
+    "text": "Automated, time-based gallery sales (e.g. a discount for the first 10 days, another at expiration — like Instagram's scheduled sales) (x3 mentions, same customer thread)",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support + Intercom",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1791854017012349",
+      "https://app.intercom.com/a/inbox/_/inbox/conversation/215476362234132"
+    ],
+    "bucket": "marketing"
+  },
+  {
+    "id": "r42",
+    "n": 42,
+    "date": "2026-10-13",
+    "text": "Customizable gallery welcome/cover page design — the mobile welcome page shows an intentionally blurred background and a photographer asked if the page design could be made customizable/improved",
+    "category": "Gallery Design & Branding",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support + Intercom",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1791891521816159",
+      "https://app.intercom.com/a/inbox/_/inbox/conversation/215476366714933"
+    ],
+    "bucket": "brandkit"
+  },
+  {
+    "id": "r43",
+    "n": 43,
+    "date": "2026-10-13",
+    "text": "Option to show no text overlay on the gallery cover photo",
+    "category": "Gallery Design & Branding",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1791888001777199"
+    ],
+    "bucket": "brandkit"
+  },
+  {
+    "id": "r44",
+    "n": 44,
+    "date": "2026-10-13",
+    "text": "Recalculate/auto-fix the gallery cover photo so it isn't blurry",
+    "category": "Gallery Design & Branding",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1791887954837789"
+    ],
+    "bucket": "brandkit"
+  },
+  {
+    "id": "r45",
+    "n": 45,
+    "date": "2026-10-14",
+    "text": "Built-in CRM with contracts + client login (competitor cited: Sprout Studio)",
+    "category": "Integrations, CRM & Website",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1791936611714519"
+    ],
+    "bucket": "marketing"
+  },
+  {
+    "id": "r46",
+    "n": 46,
+    "date": "2026-10-14",
+    "text": "Bulk-select multiple photos to order prints with the same size/paper specs in Store (currently one at a time)",
+    "category": "Print Labs & Products",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#pod-gallery",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1791983336561979"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r47",
+    "n": 47,
+    "date": "2026-10-14",
+    "text": "Full-resolution zoom on mobile gallery view (like Google Photos)",
+    "category": "Mobile",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1791917599691349"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r48",
+    "n": 48,
+    "date": "2026-10-14",
+    "text": "Let photographers assign a gallery to a collection directly while selecting a brand kit / creating the gallery",
+    "category": "Organization (Sets/Folders/Collections)",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1791991205398519"
+    ],
+    "bucket": "collection"
+  },
+  {
+    "id": "r49",
+    "n": 49,
+    "date": "2026-10-14",
+    "text": "More LatAm payment methods — offline/cash, digital wallets (Nequi/DaviPlata), PSE bank transfer",
+    "category": "Store, Pricing & Payments",
+    "mentions": 2,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1791978898875869",
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1791978477832899"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r50",
+    "n": 50,
+    "date": "2026-10-14",
+    "text": "Password-protect sub-albums/collections within a gallery, so each person (e.g. multi-headshot session) only accesses their own section with a password",
+    "category": "Privacy, Access & Security",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#pod-gallery",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1791988849456679"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r51",
+    "n": 51,
+    "date": "2026-10-14",
+    "text": "Per-client download analytics should count all media types, not just photo/album downloads (video downloads currently missing)",
+    "category": "Notifications, Emails & Analytics",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#gallery-internal-feedback",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08TET73ZUM/p1791924623073359"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r52",
+    "n": 52,
+    "date": "2026-10-14",
+    "text": "Video gallery enhancements for hybrid shooters: photo-only/video-only/both gallery modes, custom video display names, dedicated video cover photo",
+    "category": "Slideshow & Video",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792002015917149"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r53",
+    "n": 53,
+    "date": "2026-10-15",
+    "text": "API for automated/automatic photo uploads into Galleries",
+    "category": "Integrations, CRM & Website",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1792083792684259"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r54",
+    "n": 54,
+    "date": "2026-10-15",
+    "text": "Allow disabling full-gallery downloads while letting clients self-select favorites and check out a limited number of digital downloads (Zenfolio-style workflow)",
+    "category": "Downloads & Watermarks",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#gallery-internal-feedback",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08TET73ZUM/p1792086800470309"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r55",
+    "n": 55,
+    "date": "2026-10-15",
+    "text": "Centralized analytics dashboard across all galleries (views/downloads/engagement in one place)",
+    "category": "Notifications, Emails & Analytics",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792030056503549"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r56",
+    "n": 56,
+    "date": "2026-10-15",
+    "text": "Customizable client delivery emails — button colors/fonts and a less generic \"View Gallery\" CTA",
+    "category": "Notifications, Emails & Analytics",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792030056503549"
+    ],
+    "bucket": "brandkit"
+  },
+  {
+    "id": "r57",
+    "n": 57,
+    "date": "2026-10-15",
+    "text": "Customizable fonts for set headings to match the main gallery header",
+    "category": "Gallery Design & Branding",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792030056503549"
+    ],
+    "bucket": "brandkit"
+  },
+  {
+    "id": "r58",
+    "n": 58,
+    "date": "2026-10-15",
+    "text": "Higher-resolution gallery cover images (team says a fix is already rolling out)",
+    "category": "Gallery Design & Branding",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792030056503549"
+    ],
+    "bucket": "brandkit"
+  },
+  {
+    "id": "r59",
+    "n": 59,
+    "date": "2026-10-15",
+    "text": "Square (non-rounded) image corners option for the gallery grid",
+    "category": "Gallery Design & Branding",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792030056503549"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r60",
+    "n": 60,
+    "date": "2026-10-15",
+    "text": "Standalone option to pay for gallery migration without needing a full Galleries plan",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1792005047124559"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r61",
+    "n": 61,
+    "date": "2026-10-16",
+    "text": "(Internal/eng) Track errors from the core edit+retouch pipeline in PostHog, not just upload/cloud errors, to gauge their blast radius on Gallery",
+    "category": "Other",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#pod-gallery",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1792143882378539"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r62",
+    "n": 62,
+    "date": "2026-10-16",
+    "text": "Bulk-select & purchase multiple photos surfaced via AI face-recognition search (checkout currently forces one-by-one selection)",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792170106381729"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r63",
+    "n": 63,
+    "date": "2026-10-16",
+    "text": "Custom/required checkout fields (e.g. bib number, name) for photo orders",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792170106381729"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r64",
+    "n": 64,
+    "date": "2026-10-16",
+    "text": "GBP (multi-currency) pricing & checkout for the Galleries storefront — currently USD-only; open points are Stripe's cross-currency fee and refund-rate drift",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#pod-gallery",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1792129105597899"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r65",
+    "n": 65,
+    "date": "2026-10-16",
+    "text": "Nested sub-folder hierarchy for organizing galleries (3–5+ levels deep), requested by a photographer migrating from SmugMug",
+    "category": "Organization (Sets/Folders/Collections)",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792170106381729"
+    ],
+    "bucket": "collection"
+  },
+  {
+    "id": "r66",
+    "n": 66,
+    "date": "2026-10-16",
+    "text": "One-click \"buy all my photos\" package via AI face/bib-number recognition, similar to Sportograf",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792170106381729"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r67",
+    "n": 67,
+    "date": "2026-10-17",
+    "text": "Ability to expand/enlarge horizontal images in a gallery, like Pic Time offers",
+    "category": "Gallery Design & Branding",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#pod-gallery, (Jira ONCL-13637)",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1792186028259589"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r68",
+    "n": 68,
+    "date": "2026-10-17",
+    "text": "Gallery slideshows should loop instead of stopping after the last image",
+    "category": "Slideshow & Video",
+    "mentions": 1,
+    "origin": "Intercom",
+    "source": "Intercom",
+    "links": [
+      "https://app.intercom.com/a/inbox/_/inbox/conversation/215476439415735"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r69",
+    "n": 69,
+    "date": "2026-10-17",
+    "text": "Let photographers see/export a list of guest favorites (platform comparison: Zenfolio)",
+    "category": "Proofing, Favorites & Comments",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792195386920869"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r70",
+    "n": 70,
+    "date": "2026-10-17",
+    "text": "PIN-protect an individual set within a gallery, so only guests with the PIN can view that set while the rest stay open to everyone",
+    "category": "Privacy, Access & Security",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#pod-gallery, (Jira ONCL-13638)",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1792187615546639"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r71",
+    "n": 71,
+    "date": "2026-10-17",
+    "text": "Toggle gallery watermark on/off without needing to re-upload all images",
+    "category": "Downloads & Watermarks",
+    "mentions": 1,
+    "origin": "Intercom",
+    "source": "Intercom",
+    "links": [
+      "https://app.intercom.com/a/inbox/_/inbox/conversation/215476439415735"
+    ],
+    "bucket": "brandkit"
+  },
+  {
+    "id": "r72",
+    "n": 72,
+    "date": "2026-10-18",
+    "text": "Add email notifications when someone views/accesses a gallery (competitor reference: Picflow)",
+    "category": "Notifications, Emails & Analytics",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792273038003319"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r73",
+    "n": 73,
+    "date": "2026-10-18",
+    "text": "Add more spacing/padding between the watermark logo and the image edge (currently sits too close to the border)",
+    "category": "Downloads & Watermarks",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792273263805159"
+    ],
+    "bucket": "brandkit"
+  },
+  {
+    "id": "r74",
+    "n": 74,
+    "date": "2026-10-18",
+    "text": "Allow manually ordering galleries within a collection instead of forcing alphabetical order",
+    "category": "Organization (Sets/Folders/Collections)",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792324864832759"
+    ],
+    "bucket": "collection"
+  },
+  {
+    "id": "r75",
+    "n": 75,
+    "date": "2026-10-18",
+    "text": "Let photographers control/suppress the automatic Aftershoot \"gallery download\" email sent to their clients (caused client confusion about sign-up/payment)",
+    "category": "Notifications, Emails & Analytics",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1792345561300189"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r76",
+    "n": 76,
+    "date": "2026-10-19",
+    "text": "Add WHCC custom cards to the Galleries print product lineup",
+    "category": "Print Labs & Products",
+    "mentions": 2,
+    "origin": "Customer feedback (website)",
+    "source": "#pod-gallery, #gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1792430656555129",
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792428369300399"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r77",
+    "n": 77,
+    "date": "2026-10-19",
+    "text": "Add a New Zealand print lab (e.g. Queensberry) to Galleries",
+    "category": "Print Labs & Products",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792434282657049"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r78",
+    "n": 78,
+    "date": "2026-10-19",
+    "text": "Let clients selectively download just one album/section of a gated gallery instead of the whole gallery",
+    "category": "Downloads & Watermarks",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792421730498839"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r79",
+    "n": 79,
+    "date": "2026-10-20",
+    "text": "Allow selling web-size print files without watermark",
+    "category": "Downloads & Watermarks",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792440218815049"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r80",
+    "n": 80,
+    "date": "2026-10-20",
+    "text": "Coupon to let a client check out a subset of a larger gallery for $0, instead of photographer manually rebuilding a downloadable album",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792468256530529"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r81",
+    "n": 81,
+    "date": "2026-10-20",
+    "text": "Default the \"Almost There\" download pop-up/PIN to off, so clients can one-click download",
+    "category": "Downloads & Watermarks",
+    "mentions": 1,
+    "origin": "Intercom",
+    "source": "Intercom",
+    "links": [
+      "https://app.intercom.com/a/inbox/_/inbox/conversation/215476471463876"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r82",
+    "n": 82,
+    "date": "2026-10-20",
+    "text": "Event Date field: allow backdating to past dates for older galleries (noted as fixed same-day in thread)",
+    "category": "Other",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792489592207229"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r83",
+    "n": 83,
+    "date": "2026-10-20",
+    "text": "Gallery banner: lock aspect ratio so sponsor logos display consistently across device sizes",
+    "category": "Gallery Design & Branding",
+    "mentions": 1,
+    "origin": "Intercom",
+    "source": "Intercom",
+    "links": [
+      "https://app.intercom.com/a/inbox/_/inbox/conversation/215476471463876"
+    ],
+    "bucket": "brandkit"
+  },
+  {
+    "id": "r84",
+    "n": 84,
+    "date": "2026-10-20",
+    "text": "Print store checkout: only show clients the sizes/papers the photographer has enabled, instead of the full WHCC catalog shown (greyed out)",
+    "category": "Print Labs & Products",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792513443822959"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r85",
+    "n": 85,
+    "date": "2026-10-20",
+    "text": "Print store pricing editor: add a \"Check All / Uncheck All\" toggle for product/size visibility",
+    "category": "Print Labs & Products",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792511997743769"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r86",
+    "n": 86,
+    "date": "2026-10-20",
+    "text": "Store coupons: support a flat dollar-amount discount, not just percentage-based",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792465339208759"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r87",
+    "n": 87,
+    "date": "2026-10-21",
+    "text": "Discount codes with an expiry date in the Galleries store",
+    "category": "Store, Pricing & Payments",
+    "mentions": 2,
+    "origin": "Support / Oncall",
+    "source": "#customer-support, #aftershoot-community",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1792521548596759"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r88",
+    "n": 88,
+    "date": "2026-10-21",
+    "text": "In-app promotional nudges (top banner + sidebar plan card) for the Black Friday campaign",
+    "category": "Other",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#gallery-core",
+    "links": [
+      "https://aftershootco.slack.com/archives/C0BJY1Y7NUV/p1792589831421189"
+    ],
+    "bucket": "marketing"
+  },
+  {
+    "id": "r89",
+    "n": 89,
+    "date": "2026-10-21",
+    "text": "Let clients submit feedback on photos and have Aftershoot auto-suggest/apply the edit for approval (e.g. \"remove my wrinkles\")",
+    "category": "Proofing, Favorites & Comments",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792525177926209"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r90",
+    "n": 90,
+    "date": "2026-10-21",
+    "text": "Move a photo between albums within a gallery (e.g. promote into Highlights after the fact)",
+    "category": "Organization (Sets/Folders/Collections)",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792543009505789"
+    ],
+    "bucket": "collection"
+  },
+  {
+    "id": "r91",
+    "n": 91,
+    "date": "2026-10-21",
+    "text": "Multi-currency support (e.g. GBP display, not just USD) in the Galleries store",
+    "category": "Store, Pricing & Payments",
+    "mentions": 2,
+    "origin": "Support / Oncall",
+    "source": "#customer-support, #aftershoot-community",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1792521548596759"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r92",
+    "n": 92,
+    "date": "2026-10-21",
+    "text": "Password-protect/block downloads for videos and add a watermark overlay during video playback",
+    "category": "Downloads & Watermarks",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1792550246361359"
+    ],
+    "bucket": "brandkit"
+  },
+  {
+    "id": "r93",
+    "n": 93,
+    "date": "2026-10-21",
+    "text": "Search photos by text/numbers on tagged items (e.g. race bib numbers) or by dominant color, similar to face search",
+    "category": "Other",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792523501327919"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r94",
+    "n": 94,
+    "date": "2026-10-22",
+    "text": "\"Coming soon\" gallery preview with QR code guest selfie registration + notify-when-photos-ready (like FotoOwl)",
+    "category": "Notifications, Emails & Analytics",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792690139619029"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r95",
+    "n": 95,
+    "date": "2026-10-22",
+    "text": "A print lab option that ships internationally (e.g. to Australia)",
+    "category": "Print Labs & Products",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792632526458379"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r96",
+    "n": 96,
+    "date": "2026-10-22",
+    "text": "Booking/appointment module for photo shoots (e.g. couple consultations)",
+    "category": "Integrations, CRM & Website",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792686897283169"
+    ],
+    "bucket": "marketing"
+  },
+  {
+    "id": "r97",
+    "n": 97,
+    "date": "2026-10-22",
+    "text": "Bulk option to hide/disable multiple store products at once (currently one-by-one only)",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Intercom",
+    "source": "Intercom",
+    "links": [
+      "https://app.intercom.com/a/inbox/_/inbox/conversation/215476416855932"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r98",
+    "n": 98,
+    "date": "2026-10-22",
+    "text": "Embed a gallery via an HTML code snippet on external blogs/websites (like Pic-Time)",
+    "category": "Integrations, CRM & Website",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792634163228359"
+    ],
+    "bucket": "marketing"
+  },
+  {
+    "id": "r99",
+    "n": 99,
+    "date": "2026-10-22",
+    "text": "Mobile app / easier way to access galleries and grab share links from phone",
+    "category": "Mobile",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792633152929459"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r100",
+    "n": 100,
+    "date": "2026-10-22",
+    "text": "Multi-currency support for digital image sales (GBP for UK sellers)",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1792666500274409"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r101",
+    "n": 101,
+    "date": "2026-10-23",
+    "text": "Automatic \"Contact Form\" on gallery pages so visitors can leave email/phone for campaigns & CRM",
+    "category": "Integrations, CRM & Website",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support (Pod Gallery, ONCL-13896), (Intercom)",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1792696078743759",
+      "https://app.intercom.com/a/inbox/_/inbox/conversation/215476518499061"
+    ],
+    "bucket": "marketing"
+  },
+  {
+    "id": "r102",
+    "n": 102,
+    "date": "2026-10-23",
+    "text": "Slideshow feature for galleries, like Pic-Time has",
+    "category": "Slideshow & Video",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792694298947559"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r103",
+    "n": 103,
+    "date": "2026-10-24",
+    "text": "Add star ratings (3/4/5★) alongside the existing Heart/Favorite selection, so clients can tag photos for different deliverables (prints/album sizes)",
+    "category": "Proofing, Favorites & Comments",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792832651118539"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r104",
+    "n": 104,
+    "date": "2026-10-24",
+    "text": "Built-in CRM for Aftershoot Galleries (contracts, invoices, gallery delivery in one place)",
+    "category": "Integrations, CRM & Website",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support (Gallery pod)",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1792795595278119"
+    ],
+    "bucket": "marketing"
+  },
+  {
+    "id": "r105",
+    "n": 105,
+    "date": "2026-10-24",
+    "text": "Make the Aftershoot logo/home link in the Galleries sidebar open in a new tab via mouse-wheel/middle-click (to quickly open multiple Galleries tabs)",
+    "category": "Gallery Design & Branding",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#pod-gallery (founder feedback via FB group)",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1792862321650439"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r106",
+    "n": 106,
+    "date": "2026-10-24",
+    "text": "Option to restrict/limit gallery downloads to specific people (e.g. only the couple), to protect print/download revenue",
+    "category": "Privacy, Access & Security",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792781415533819"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r107",
+    "n": 107,
+    "date": "2026-10-24",
+    "text": "Sort favorited/selected photo numbers in ascending numerical order when exporting a selection list",
+    "category": "Proofing, Favorites & Comments",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792832651118539"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r108",
+    "n": 108,
+    "date": "2026-10-24",
+    "text": "Support 100% discount codes on Galleries so specific people (e.g. a social media contact) get free, watermark-free access while others pay",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support (Gallery pod)",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1792814820449919"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r109",
+    "n": 109,
+    "date": "2026-10-25",
+    "text": "Add mobile money support (e.g. M-Pesa) as a payment method for regions without Stripe access (customer specifically flagged Kenya)",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792906184502469"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r110",
+    "n": 110,
+    "date": "2026-10-25",
+    "text": "Improve culling/selection to avoid picking near-duplicate images that have closed eyes or low quality",
+    "category": "Proofing, Favorites & Comments",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1792889744234239"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r111",
+    "n": 111,
+    "date": "2026-10-26",
+    "text": "Client self-booking for galleries, similar to ShootProof's \"Book clients\"",
+    "category": "Integrations, CRM & Website",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793035755634709"
+    ],
+    "bucket": "marketing"
+  },
+  {
+    "id": "r112",
+    "n": 112,
+    "date": "2026-10-26",
+    "text": "Let clients explicitly confirm their final favorites selection, with an email notification sent to the photographer",
+    "category": "Proofing, Favorites & Comments",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793012079007989"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r113",
+    "n": 113,
+    "date": "2026-10-26",
+    "text": "Let photographers set a max number of photos clients can select as favorites",
+    "category": "Proofing, Favorites & Comments",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793011961509859"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r114",
+    "n": 114,
+    "date": "2026-10-26",
+    "text": "Lightroom Classic Publish Service for Galleries — map LrC collections to galleries/sets, auto-replace re-edited images on republish, control export size/settings, preserve sort order",
+    "category": "Integrations, CRM & Website",
+    "mentions": 2,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website, #customer-support (oncall ticket)",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793038589894939",
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1793039146294779"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r115",
+    "n": 115,
+    "date": "2026-10-26",
+    "text": "Mobile app to manage galleries on-the-go (toggle settings like downloads, respond to clients quickly)",
+    "category": "Mobile",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793019650832039"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r116",
+    "n": 116,
+    "date": "2026-10-26",
+    "text": "Slideshow/video maker with music, 4K export, and configurable photos-per-slide matching brand theme",
+    "category": "Slideshow & Video",
+    "mentions": 2,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793026197533819",
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793019650832039"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r117",
+    "n": 117,
+    "date": "2026-10-27",
+    "text": "Ability to edit/retouch client-favorited images directly from the gallery, plus a search button to find images in a gallery",
+    "category": "Proofing, Favorites & Comments",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1793098319033089"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r118",
+    "n": 118,
+    "date": "2026-10-27",
+    "text": "Ability to selectively hide/remove individual store products (e.g. leather albums) without disabling the whole vendor",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793043002621709"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r119",
+    "n": 119,
+    "date": "2026-10-27",
+    "text": "Centralized/easier cross-gallery activity notifications & analytics (one feed showing all galleries' activity, incl. login dates), vs. digging into each gallery separately",
+    "category": "Notifications, Emails & Analytics",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793112434995759"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r120",
+    "n": 120,
+    "date": "2026-10-27",
+    "text": "Customizable/universal text translations across the gallery page (edit all labels/copy in own language and style)",
+    "category": "Localization",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793081759902279"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r121",
+    "n": 121,
+    "date": "2026-10-27",
+    "text": "Freely position gallery name/title on the cover (not limited to preset positions)",
+    "category": "Gallery Design & Branding",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#pod-gallery",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1793039640769109"
+    ],
+    "bucket": "brandkit"
+  },
+  {
+    "id": "r122",
+    "n": 122,
+    "date": "2026-10-27",
+    "text": "Global default gallery settings (downloads, privacy, resolution) reusable across all galleries, beyond what Brand Kit covers today",
+    "category": "Settings & Presets",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793105133929179"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r123",
+    "n": 123,
+    "date": "2026-10-27",
+    "text": "Organize gallery images into sections/folders (Highlights, Getting Ready, Ceremony, Reception, Portraits)",
+    "category": "Organization (Sets/Folders/Collections)",
+    "mentions": 2,
+    "origin": "Customer feedback (website)",
+    "source": "#pod-gallery, #gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1793039640769109",
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793114326129439"
+    ],
+    "bucket": "collection"
+  },
+  {
+    "id": "r124",
+    "n": 124,
+    "date": "2026-10-27",
+    "text": "Photographer mobile web access to manage/share galleries (e.g. text a gallery link from a phone browser instead of emailing it to self)",
+    "category": "Mobile",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#pod-gallery",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1793039640769109"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r125",
+    "n": 125,
+    "date": "2026-10-28",
+    "text": "Album templates and layouts for reveal sessions (cited Fundy)",
+    "category": "Gallery Design & Branding",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793126057978039"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r126",
+    "n": 126,
+    "date": "2026-10-28",
+    "text": "Built-in website builder for photographers (cited Pixieset)",
+    "category": "Integrations, CRM & Website",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793173885551799"
+    ],
+    "bucket": "marketing"
+  },
+  {
+    "id": "r127",
+    "n": 127,
+    "date": "2026-10-28",
+    "text": "Localized/translated gallery delivery pages — Dutch and Portuguese requested",
+    "category": "Localization",
+    "mentions": 2,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793179438872229",
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793140134421989"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r128",
+    "n": 128,
+    "date": "2026-10-28",
+    "text": "Mobile-friendly client access — let clients view/open their gallery from their phone (cited Pixieset as having this)",
+    "category": "Mobile",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793187748210539"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r129",
+    "n": 129,
+    "date": "2026-10-28",
+    "text": "More design options for the gallery cover page",
+    "category": "Gallery Design & Branding",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793140134421989"
+    ],
+    "bucket": "brandkit"
+  },
+  {
+    "id": "r130",
+    "n": 130,
+    "date": "2026-10-28",
+    "text": "RAW file support for gallery delivery (cited Pixieset)",
+    "category": "Downloads & Watermarks",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793179438872229"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r131",
+    "n": 131,
+    "date": "2026-10-29",
+    "text": "Cap/limit free downloads in a gallery package — e.g. allow only 10–20 free images per gallery before requiring payment for the rest (already tracked as Gating V2, ONCL-14140)",
+    "category": "Downloads & Watermarks",
+    "mentions": 3,
+    "origin": "Support / Oncall",
+    "source": "#pod-gallery, #customer-support, Intercom",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1793248089791469",
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1793248603737339",
+      "https://app.intercom.com/a/inbox/_/inbox/conversation/215476604008858"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r132",
+    "n": 132,
+    "date": "2026-10-30",
+    "text": "Activity notifications for gallery owners (order placed, downloaded, favorited), like Pixieset",
+    "category": "Notifications, Emails & Analytics",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793318596032609"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r133",
+    "n": 133,
+    "date": "2026-10-30",
+    "text": "Full website/landing-page builder beyond gallery pages, so photographers can migrate their whole site to Aftershoot",
+    "category": "Integrations, CRM & Website",
+    "mentions": 1,
+    "origin": "Intercom",
+    "source": "Intercom",
+    "links": [
+      "https://app.intercom.com/a/inbox/_/inbox/conversation/215476624260513"
+    ],
+    "bucket": "marketing"
+  },
+  {
+    "id": "r134",
+    "n": 134,
+    "date": "2026-10-30",
+    "text": "Guided album design/sales workflow for selling printed albums & wall art",
+    "category": "Print Labs & Products",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#pod-gallery (prospect feedback via Nikhar)",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1793330087690089"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r135",
+    "n": 135,
+    "date": "2026-10-30",
+    "text": "Mobile app (or mobile-friendly access) for clients to view galleries, like Pic-Time offers",
+    "category": "Mobile",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793324785389349"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r136",
+    "n": 136,
+    "date": "2026-10-30",
+    "text": "Raise the ~10-recipient limit when sending/sharing a gallery via email",
+    "category": "Notifications, Emails & Analytics",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793382966038859"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r137",
+    "n": 137,
+    "date": "2026-10-30",
+    "text": "Simplify how watermarks are configured/displayed in Galleries",
+    "category": "Downloads & Watermarks",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793382966038859"
+    ],
+    "bucket": "brandkit"
+  },
+  {
+    "id": "r138",
+    "n": 138,
+    "date": "2026-10-30",
+    "text": "Support deferred-payment checkout (order now, pay via a separate invoice e.g. QuickBooks) for gallery orders",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support (Pod Gallery)",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1793305934066459"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r139",
+    "n": 139,
+    "date": "2026-10-30",
+    "text": "White-label print store with the photographer's own commission, shareable as a standalone print link",
+    "category": "Print Labs & Products",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#pod-gallery (prospect feedback via Nikhar)",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1793330087690089"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r140",
+    "n": 140,
+    "date": "2026-10-31",
+    "text": "Hide the \"Photos By\" attribution text in the gallery footer — no setting exists today in the footer editor or Brand Kit",
+    "category": "Gallery Design & Branding",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support (ONCL-14232)",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1793436719660599"
+    ],
+    "bucket": "brandkit"
+  },
+  {
+    "id": "r141",
+    "n": 141,
+    "date": "2026-10-31",
+    "text": "Predefined/default gallery settings (a template or preset) so photographers don't have to reconfigure the same options for every new client gallery — customer compared favorably to Pixieset, which has this, while evaluating a move to Galleries",
+    "category": "Settings & Presets",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support (same ticket, ONCL-14232)",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1793439932887079?thread_ts=1793436719.660599&cid=C043CTTL05R"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r142",
+    "n": 142,
+    "date": "2026-10-31",
+    "text": "Support $0/zero-valued store packages (e.g. \"3 included digital downloads per family\" with paid extras) — confirmed as currently unsupported",
+    "category": "Store, Pricing & Payments",
+    "mentions": 1,
+    "origin": "Support / Oncall",
+    "source": "#customer-support (ONCL-14213)",
+    "links": [
+      "https://aftershootco.slack.com/archives/C043CTTL05R/p1793385261945759"
+    ],
+    "bucket": "store"
+  },
+  {
+    "id": "r143",
+    "n": 143,
+    "date": "2026-11-02",
+    "text": "Auto-email the feedback submitter whenever a teammate replies in the feedback Slack thread (like the Blaze bot does for support)",
+    "category": "Other",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793638357261499"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r144",
+    "n": 144,
+    "date": "2026-11-02",
+    "text": "Dark mode option for the gallery grid/viewing experience",
+    "category": "Gallery Design & Branding",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793598549617219"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r145",
+    "n": 145,
+    "date": "2026-11-02",
+    "text": "Guest photo-upload via a shareable QR/link (a separate \"Guests\" section alongside Photos/Videos) for wedding guests to add their own photos",
+    "category": "Other",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793564054278459"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r146",
+    "n": 146,
+    "date": "2026-11-02",
+    "text": "More prominent/bold hamburger-menu icon on the Galleries page (currently near-invisible)",
+    "category": "Gallery Design & Branding",
+    "mentions": 1,
+    "origin": "Internal / Team",
+    "source": "#pod-gallery",
+    "links": [
+      "https://aftershootco.slack.com/archives/C08J9H4DX7W/p1793572394957499"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r147",
+    "n": 147,
+    "date": "2026-11-02",
+    "text": "Per-collection visual branding/style customization (today Brand Kits only apply at the gallery level) — customer has been waiting months",
+    "category": "Gallery Design & Branding",
+    "mentions": 1,
+    "origin": "Intercom",
+    "source": "Intercom",
+    "links": [
+      "https://app.intercom.com/a/inbox/_/inbox/conversation/215476659004401"
+    ],
+    "bucket": "collection"
+  },
+  {
+    "id": "r148",
+    "n": 148,
+    "date": "2026-11-02",
+    "text": "Redesigned collections view: smaller thumbnails with event title shown underneath (cited Pixieset)",
+    "category": "Gallery Design & Branding",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793637019149329"
+    ],
+    "bucket": "collection"
+  },
+  {
+    "id": "r149",
+    "n": 149,
+    "date": "2026-11-02",
+    "text": "Save gallery settings as a reusable preset/template (cited Pixieset) so galleries don't need to be built from scratch each time",
+    "category": "Settings & Presets",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793637134152419"
+    ],
+    "bucket": "gallery"
+  },
+  {
+    "id": "r150",
+    "n": 150,
+    "date": "2026-11-02",
+    "text": "Support subfolders/categories when uploading photos into a gallery (e.g. splitting a wedding reception into portraits, group photos, etc.)",
+    "category": "Organization (Sets/Folders/Collections)",
+    "mentions": 1,
+    "origin": "Customer feedback (website)",
+    "source": "#gallery-user-feedback-website",
+    "links": [
+      "https://aftershootco.slack.com/archives/C09FQE5Q2HZ/p1793615719469469"
+    ],
+    "bucket": "collection"
+  }
+]
