@@ -29,15 +29,18 @@ export function BucketGrid({
     <Card className="min-w-0">
       <CardHeader>
         <CardTitle>Bucket × priority</CardTitle>
-        <CardDescription>Select a cell to filter the list below.</CardDescription>
+        <CardDescription>
+          Select a cell to filter the list below.
+          <span className="sm:hidden"> Swipe sideways for every column.</span>
+        </CardDescription>
       </CardHeader>
       <CardContent className="min-w-0">
         <div className="-mx-1 overflow-x-auto px-1">
-          <table className="w-full min-w-[30rem] border-separate border-spacing-1 text-sm tabular-nums">
+          <table className="w-full min-w-[28rem] border-separate border-spacing-1 text-sm tabular-nums">
             <thead>
               <tr>
-                <th scope="col" className="sr-only">
-                  Bucket
+                <th scope="col" className="sticky left-0 z-10 bg-card">
+                  <span className="sr-only">Bucket</span>
                 </th>
                 {COLS.map((c) => (
                   <th
@@ -61,7 +64,7 @@ export function BucketGrid({
                   <th
                     scope="row"
                     className={cn(
-                      "pr-2 text-left text-sm font-medium whitespace-nowrap",
+                      "sticky left-0 z-10 bg-card pr-2 text-left text-sm font-medium whitespace-nowrap",
                       b === "all" && "pt-1",
                     )}
                   >

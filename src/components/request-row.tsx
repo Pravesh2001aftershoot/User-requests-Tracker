@@ -95,7 +95,7 @@ export const RequestRow = memo(function RequestRow({
         </div>
       </div>
 
-      <div className="flex flex-wrap items-start gap-x-4 gap-y-2 lg:flex-nowrap lg:justify-end">
+      <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-start sm:gap-x-4 lg:flex-nowrap lg:justify-end">
         <div className="flex flex-col gap-1">
           <Select
             value={row.effectiveBucket}
@@ -104,7 +104,7 @@ export const RequestRow = memo(function RequestRow({
           >
             <SelectTrigger
               size="sm"
-              className="w-36"
+              className="w-full data-[size=sm]:h-9 sm:w-36 sm:data-[size=sm]:h-7"
               aria-label={`Bucket for request ${row.n}`}
             >
               <SelectValue />
@@ -147,13 +147,14 @@ export const RequestRow = memo(function RequestRow({
           onValueChange={(v) => onPriority(row, isPriority(v) ? v : null)}
           disabled={!canWrite}
           aria-label={`Priority for request ${row.n}`}
+          className="w-full sm:w-fit"
         >
           {PRIORITY_OPTIONS.map((p) => (
             <ToggleGroupItem
               key={p.value}
               value={p.value}
               aria-label={p.label}
-              className={cn("px-2 font-mono text-xs", p.on)}
+              className={cn("h-9 flex-1 px-2 font-mono text-xs sm:h-7 sm:flex-none", p.on)}
             >
               {p.short}
             </ToggleGroupItem>

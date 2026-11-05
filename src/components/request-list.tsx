@@ -79,8 +79,8 @@ export function RequestList({
           </Tabs>
         </div>
 
-        <div className="flex flex-wrap items-center gap-2">
-          <div className="relative w-full sm:w-64">
+        <div className="grid grid-cols-2 items-center gap-2 sm:flex sm:flex-wrap">
+          <div className="relative col-span-2 sm:w-64">
             <SearchIcon
               className="pointer-events-none absolute top-1/2 left-2.5 size-4 -translate-y-1/2 text-muted-foreground"
               aria-hidden
@@ -100,7 +100,7 @@ export function RequestList({
             value={filters.priority}
             onValueChange={(v) => setFilters({ priority: v as Filters["priority"] })}
           >
-            <SelectTrigger className="w-[9.5rem]" aria-label="Filter by priority">
+            <SelectTrigger className="w-full sm:w-[9.5rem]" aria-label="Filter by priority">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
@@ -116,7 +116,7 @@ export function RequestList({
           </Select>
 
           <Select value={filters.origin} onValueChange={(v) => setFilters({ origin: v })}>
-            <SelectTrigger className="w-[11.5rem]" aria-label="Filter by origin">
+            <SelectTrigger className="w-full sm:w-[11.5rem]" aria-label="Filter by origin">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
@@ -134,6 +134,7 @@ export function RequestList({
             pressed={filters.newOnly}
             onPressedChange={(v) => setFilters({ newOnly: v })}
             aria-label="Only requests new this week"
+            className="w-full sm:w-auto"
           >
             <SparklesIcon />
             New this week
@@ -143,7 +144,7 @@ export function RequestList({
             value={filters.sort}
             onValueChange={(v) => setFilters({ sort: v as Filters["sort"] })}
           >
-            <SelectTrigger className="w-[9.5rem] sm:ml-auto" aria-label="Sort">
+            <SelectTrigger className="w-full sm:ml-auto sm:w-[9.5rem]" aria-label="Sort">
               <SelectValue />
             </SelectTrigger>
             <SelectContent align="end">
