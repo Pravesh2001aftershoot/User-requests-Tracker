@@ -19,6 +19,29 @@ Between digests, anyone who can edit the tracker can click **Fetch now** in its 
 runs the same ingest from the page (see `src/lib/fetch-now.ts`) and logs a `runs` doc with
 `by: "Fetch now"`. Rows it files carry `addedBy: "Fetch now"`.
 
+## Scheduled ingest (no one needs to click anything)
+
+A Claude Code cloud routine, **Gallery requests – scheduled ingest**, runs the ingest
+twice a day: **4:00 and 21:00 IST** (cron `30 15,22 * * *`, UTC). It reads the five Gallery
+Slack channels, Intercom and Jira, files rows with `addedBy: "Scheduled ingest"`, and
+logs a `runs` doc with `by: "Scheduled ingest"`.
+
+- Manage, pause or run it now: https://claude.ai/code/routines/trig_013Vgo4KhrxnBBbGDZh8nAGa
+- Connectors it uses: Slack, Intercom, Atlassian (Jira). If one is disconnected, the run
+  carries on with the others and lists it in the run's `skipped` field.
+
+How it avoids counting the same message twice:
+
+1. **Cursor.** It only reads messages posted after the latest `runs` doc's `at` (minus a
+   10-minute overlap). Every run logs a `runs` doc, even when it finds nothing, so the
+   cursor always moves forward.
+2. **Known links.** A message whose permalink is already on any row, including the 150
+   seed rows (they're embedded in the routine's prompt), is skipped: no new row, no +1.
+3. **One +1 per row per run**, however many messages repeat that ask in the window.
+
+If the seed log ever changes, update the SEED LOG block at the end of the routine's
+prompt too. Otherwise the routine will file seed requests as new rows.
+
 ## How the tracker reads `requests`
 
 - A doc whose id matches a seed row (`r1` … `r150`) **overrides** that row field by
